@@ -19,4 +19,10 @@ export class HeroesComponent implements OnInit {
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
 }
+  alertMess(){
+    let x = (<HTMLInputElement>document.getElementById('par1')).value;
+    let y = (<HTMLInputElement>document.getElementById('par2')).value;
+    let somma = parseInt(x)+parseInt(y)
+    document.getElementById('result').innerHTML =somma;
+  }
 }
